@@ -25,23 +25,50 @@ body {
     width: 15em;
 }
 
+.nav-wrapper {
+    /* width: 100%; */
+}
+
 .navbar {
+    background-color: transparent!important;
     padding: 0;
+    /* width: 75%; */
 }
 
 .nav-open {
-    width: 30px;
+    /* width: 30px; */
     border: none;
 }
 
+/* .hero {
+    
+} */
+
 .jumbotron {
-    height: 650px;
+    background: transparent;
+    height: 600px;
+    margin: 0;
 }
 
 .jumbotron .container {
    display: flex;
+   margin: 0;
 }
 
+.company-description h2 {
+    /* box-sizing: none; */
+    font-family: PPRadioGrotesk,sans-serif;
+    font-size: 4.8125rem;
+    color: pink;
+    color: rgba(1,31,91);
+    font-weight: 700;
+    line-height: 1.1em;
+}
+
+.rounded-button {
+    border-radius: 20px;
+    font-size: 20px;
+}
 .jumbotron-image {
     height: 500px;
 }
