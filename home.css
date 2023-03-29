@@ -12,6 +12,7 @@ header {
     padding: 24px 80px;
     width: 100%;
     z-index: 50;
+    /* position: relative; */
 }
 
 body {
@@ -20,23 +21,66 @@ body {
 }
 
 .header-logo {
-    /* color: rgba(255,255,255,var(--tw-text-opacity));; */
     font-size: 1rem;
     width: 15em;
 }
 
 .nav-wrapper {
-    /* width: 100%; */
+    width: 100%;
 }
 
 .navbar {
     background-color: transparent!important;
+    display: flex;
     padding: 0;
-    /* width: 75%; */
+    width: 50%;
+}
+
+.corner-triangle {
+    width: 550px;
+    fill: rgb(190, 236, 253);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.logo-color-default {
+    fill: #33f;
+}
+
+.logo-color-text {
+    fill: rgba(1,31,91);
+}
+
+.logo-color-light {
+    fill: #cef1fd;
+}
+
+.logo-color-medium {
+    fill: #00d1ff;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar-nav {
+    justify-content: space-between;
+    width: 100%!important;
+    margin: 0;
+}
+
+
+.navbar .nav-wrapper .navbar-nav .nav-item .nav-link {
+    color: rgba(1,31,91);
+    font-weight: 700;
 }
 
 .nav-open {
-    /* width: 30px; */
+    background-color: transparent;
+    height: 35px;
+    width: 30px;
     border: none;
 }
 
@@ -48,21 +92,29 @@ body {
     background: transparent;
     height: 600px;
     margin: 0;
+    padding: 0;
+    position: relative;
 }
 
 .jumbotron .container {
    display: flex;
    margin: 0;
+   padding: 0;
 }
 
 .company-description h2 {
     /* box-sizing: none; */
     font-family: PPRadioGrotesk,sans-serif;
     font-size: 4.8125rem;
-    color: pink;
     color: rgba(1,31,91);
     font-weight: 700;
     line-height: 1.1em;
+}
+
+.company-description p {
+    color: #565656;
+    font-size: 1.25rem;
+    line-height: 1.9em;
 }
 
 .rounded-button {
@@ -70,5 +122,7 @@ body {
     font-size: 20px;
 }
 .jumbotron-image {
-    height: 500px;
+    height: 645px;
+    position: relative;
+    right: -250px;
 }
